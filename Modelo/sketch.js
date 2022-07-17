@@ -20,7 +20,7 @@ function setup(){
 
 
     // Criando o boundary (limite) esquerdo
-    leftBoundary=createSprite(0,0,100,800);
+    leftBoundary = createSprite(0,0,100,800);
     leftBoundary.visible = false;
 
 
@@ -34,11 +34,15 @@ function draw() {
     path.velocityY = 4;
 
     // Menino se movendo no eixo X com o mouse
-    edges= createEdgeSprites();
-    boy.collide(edges[3]);
+    
+    
+    edges = createEdgeSprites();
+    boy.collide(edges);
+
+    // Crie aqui o código para o menino colidir com os limites
 
 
-
+    
     //Crie aqui o código para fazer o fundo reiniciar
     
 
